@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(4, 9, 40, 0.7), rgba(4, 9, 30, 0.7)), url(/images/pexels-miguel-á-padriñán-3785935.jpg)
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav .nav-menu {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+    padding: 0px 15px;
+    border-radius: 122px;
+    background-color: rgb(175, 100, 53);
+    font-weight: bold;
+}
+
+.nav-menu ul li:hover {
+    display: inline-block;
+    padding: 3px 20px;
+    border-radius: 122px;
+    background-color: rgb(175, 100, 53);
+    font-weight: bold;
+}
+
+.active {
+    display: inline-block;
+    padding: 3px 20px;
+    border-radius: 122px;
+    background-color: rgb(243, 239, 236);
+    font-weight: bold;
+}
+
+.companyname {
+    color: white;
+    position: absolute;
+    margin-left: 8.5%;
+    margin-top: -7%;
+}
+
+.searchbutton {
+    margin-top: 5%;
+}
+
+.textnav-next {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textnav-next h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.textnav-next p {
+    margin: 10px 0 40px;
+}
+
+.whiteline {
+    color: wheat;
+}
+
+.section1 {
+    height: 2550px;
+    background-color: black;
+}
+
+.heding1 {
+    color: rgb(250, 249, 249);
+    size: 30%;
+    margin-left: 20%;
+}
+
+#para1 {
+    color: cornsilk;
+    position: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.imgsec2 {
+    border-radius: 30px;
+}
+
+.imgsec2:hover {
+    border-radius: 100px;
+    width: 30%;
+    animation: 1 ease;
+}
+
+#textbelowimg {
+    color: #eee6e3;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.imgtaglines {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: 0% 10% 0% 10%;
+}
+
+#textbelowimgs2 {
+    font-size: large;
+    margin-left: 15%;
+    color: wheat;
+    font-size: 50px;
+}
+
+.gif1 {
+    margin-left: 40%;
+    margin-top: -2.5%;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgb(39, 39, 24);
+}
+
+
+/*imported code For stylish search button*/
+
+ :root {
+    font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
+}
+
+button,
+input {
+    font: 1em Hind, sans-serif;
+    line-height: 1.5em;
+}
+
+input {
+    color: #171717;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input,
+.search-btn,
+.search-btn:before,
+.search-btn:after {
+    transition: all 0.25s ease-out;
+}
+
+.search-bar input,
+.search-btn {
+    width: 3em;
+    height: 3em;
+}
+
+.search-bar input:invalid:not(:focus),
+.search-btn {
+    cursor: pointer;
+}
+
+.search-bar,
+.search-bar input:focus,
+.search-bar input:valid {
+    width: 100%;
+}
+
+.search-bar input:focus,
+.search-bar input:not(:focus)+.search-btn:focus {
+    outline: transparent;
+}
+
+.search-bar {
+    margin: auto;
+    padding: 1.5em;
+    justify-content: center;
+    max-width: 30em;
+}
+
+.search-bar input {
+    background: transparent;
+    border-radius: 1.5em;
+    box-shadow: 0 0 0 0.4em #fff inset;
+    padding: 0.75em;
+    transform: translate(0.5em, 0.5em) scale(0.5);
+    transform-origin: 100% 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.search-bar input::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.search-bar input:focus,
+.search-bar input:valid {
+    background: #fff;
+    border-radius: 0.375em 0 0 0.375em;
+    box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+    transform: scale(1);
+}
+
+.search-btn {
+    background: #fcf8f8;
+    border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+    padding: 0.75em;
+    position: relative;
+    transform: translate(0.25em, 0.25em) rotate(45deg) scale(0.25, 0.125);
+    transform-origin: 0 50%;
+}
+
+.search-btn:before,
+.search-btn:after {
+    content: "";
+    display: block;
+    opacity: 0;
+    position: absolute;
+}
+
+.search-btn:before {
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+    top: 0.75em;
+    left: 0.75em;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.search-btn:after {
+    background: #f1f1f1;
+    border-radius: 0 0.25em 0.25em 0;
+    top: 51%;
+    left: 51%;
+    width: 0.75em;
+    height: 0.25em;
+    transform: translate(0.2em, 0) rotate(45deg);
+    transform-origin: 0 50%;
+}
+
+.search-btn span {
+    display: inline-block;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+
+/* Active state */
+
+.search-bar input:focus+.search-btn,
+.search-bar input:valid+.search-btn {
+    background: #2762f3;
+    border-radius: 0 0.375em 0.375em 0;
+    transform: scale(1);
+}
+
+.search-bar input:focus+.search-btn:before,
+.search-bar input:focus+.search-btn:after,
+.search-bar input:valid+.search-btn:before,
+.search-bar input:valid+.search-btn:after {
+    opacity: 1;
+}
+
+.search-bar input:focus+.search-btn:hover,
+.search-bar input:valid+.search-btn:hover,
+.search-bar input:valid:not(:focus)+.search-btn:focus {
+    background: #0c48db;
+}
+
+.search-bar input:focus+.search-btn:active,
+.search-bar input:valid+.search-btn:active {
+    transform: translateY(1px);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    input {
+        color: #f1f1f1;
+    }
+    .search-bar input {
+        box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+    }
+    .search-bar input:focus,
+    .search-bar input:valid {
+        background: #fcf9f9;
+        box-shadow: 0 0 0 0.1em #3d3d3d inset;
+    }
+    .search-btn {
+        background: #f1f1f1;
+    }
+}

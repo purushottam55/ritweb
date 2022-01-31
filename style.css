@@ -23,7 +23,7 @@ a {
     position: relative;
     background-size: cover;
     background-position: center center;
-    background-image: linear-gradient(rgba(4, 9, 40, 0.7), rgba(4, 9, 30, 0.7)), url(/images/pexels-miguel-á-padriñán-3785935.jpg)
+    background-image: linear-gradient(rgba(4, 9, 40, 0.7), rgba(4, 9, 30, 0.7)), url(pexels-miguel-á-padriñán-3785935.jpg);
 }
 
 nav {
